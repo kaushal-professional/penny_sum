@@ -18,7 +18,7 @@ import uvicorn
 app = FastAPI(title="Penny Summarizer Health Server")
 
 # Configuration
-HEALTH_PING_URL = "https://penny-00h7.onrender.com"
+HEALTH_PING_URL = "https://penny-sum.onrender.com"
 HEALTH_PING_INTERVAL = 300  # 5 minutes in seconds
 
 # Global state
@@ -182,3 +182,4 @@ if __name__ == "__main__":
     print("Starting Penny Summarizer Health Server")
     print("="*60)
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
